@@ -1,1 +1,1 @@
-pytest -s -v testCases/ --browser chrome
+pytest -s -v testCases/
