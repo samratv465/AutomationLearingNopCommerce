@@ -13,7 +13,8 @@ class Test_001_Login:
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
         act_title = self.driver.title
-        exp_title = "Your store. Login1"
+        print(act_title)
+        exp_title = "Your store. Login"
 
         if act_title == exp_title:
             assert True
@@ -51,6 +52,7 @@ class Test_001_Login:
         self.lp.clicksubmit()
         time.sleep(5)
         self.lp.clickLogout()
+        self.driver.close()
         print("*********Logout Successfully*********")
 
 
